@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://bilyipu4lc76x"]
+
+[ext_resource type="Script" path="res://scripts/Flashlight.cs" id="1_erl18"]
+[ext_resource type="AudioStream" uid="uid://d3rabyikik3h3" path="res://sounds/Flashlight_Click.mp3" id="2_685my"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_nk1uj"]
+size = Vector3(0.1, 0.1, 0.4)
+
+[node name="Flashlight" type="Node3D" node_paths=PackedStringArray("audioGameOutput")]
+script = ExtResource("1_erl18")
+audioGameOutput = NodePath("AudioStreamPlayer3D")
+flashlightClickNoise = ExtResource("2_685my")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_nk1uj")
+
+[node name="Light" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.249396)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Light"]
+unique_name_in_owner = true
+spot_range = 93.734
+spot_angle = 22.0
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]

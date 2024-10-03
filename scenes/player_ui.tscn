@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://b6bkg2b3ny6t0"]
+
+[ext_resource type="Script" path="res://scripts/PlayerScripts/PlayerUi.cs" id="1_xiths"]
+
+[node name="PlayerUI" type="CanvasLayer"]
+script = ExtResource("1_xiths")
+
+[node name="PlayerInformation" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 252.0
+offset_bottom = 212.0
+
+[node name="PlayerState" type="Label" parent="PlayerInformation"]
+offset_left = 14.0
+offset_top = 10.0
+offset_right = 107.0
+offset_bottom = 33.0
+text = "Player State:"

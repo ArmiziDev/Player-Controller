@@ -1,0 +1,404 @@
+[gd_scene load_steps=34 format=3 uid="uid://cakmsyc0sw2iu"]
+
+[ext_resource type="Script" path="res://scripts/PlayerScripts/Player.cs" id="1_pojg5"]
+[ext_resource type="Script" path="res://scripts/PlayerScripts/PlayerStateMachine.cs" id="2_4b4ws"]
+[ext_resource type="PackedScene" uid="uid://bilyipu4lc76x" path="res://scenes/flashlight.tscn" id="2_4mry2"]
+[ext_resource type="Script" path="res://scripts/PlayerScripts/WeaponLoadout.cs" id="2_swpuv"]
+[ext_resource type="Script" path="res://scripts/PlayerScripts/IdlePlayerState.cs" id="3_h4fs5"]
+[ext_resource type="Script" path="res://scripts/PlayerScripts/WalkingPlayerState.cs" id="4_whhrh"]
+[ext_resource type="Script" path="res://scripts/PlayerScripts/RunningPlayerState.cs" id="5_q8pdf"]
+[ext_resource type="Script" path="res://scripts/PlayerScripts/JumpingPlayerState.cs" id="6_fmm5x"]
+[ext_resource type="PackedScene" uid="uid://b6bkg2b3ny6t0" path="res://scenes/player_ui.tscn" id="9_jq1ws"]
+[ext_resource type="Script" path="res://scripts/PlayerScripts/CrouchingPlayerState.cs" id="9_pplru"]
+[ext_resource type="AudioStream" uid="uid://b8a6hg0a2tx8m" path="res://sounds/footsteps/footstep00.ogg" id="10_a4ewh"]
+[ext_resource type="AudioStream" uid="uid://b6cqrr7c7ebjn" path="res://sounds/footsteps/footstep01.ogg" id="11_ke76y"]
+[ext_resource type="AudioStream" uid="uid://sh8053gdcfvv" path="res://sounds/footsteps/footstep02.ogg" id="12_q36pp"]
+[ext_resource type="AudioStream" uid="uid://chi4f3va1f4bt" path="res://sounds/footsteps/footstep03.ogg" id="13_pse8u"]
+[ext_resource type="AudioStream" uid="uid://dyukmwyvu5maq" path="res://sounds/footsteps/footstep04.ogg" id="14_8eix5"]
+[ext_resource type="AudioStream" uid="uid://b02qcjk3g7qro" path="res://sounds/footsteps/footstep05.ogg" id="15_xlcb8"]
+[ext_resource type="AudioStream" uid="uid://bpqawo5i266bi" path="res://sounds/footsteps/footstep06.ogg" id="16_w6ndb"]
+[ext_resource type="AudioStream" uid="uid://b80b2onb1l18h" path="res://sounds/footsteps/footstep07.ogg" id="17_i13gi"]
+[ext_resource type="AudioStream" uid="uid://jgvbg507wtam" path="res://sounds/footsteps/footstep08.ogg" id="18_cbjfg"]
+[ext_resource type="AudioStream" uid="uid://cqwur2ccmpnxb" path="res://sounds/footsteps/footstep09.ogg" id="19_n507e"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_tqtbf"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1yaep"]
+albedo_color = Color(0.141176, 0.184314, 0.27451, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_sh3sk"]
+material = SubResource("StandardMaterial3D_1yaep")
+size = Vector3(0.5, 0.1, 0.1)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_x5w0j"]
+radius = 0.35
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_f3cjc"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_njsvy"]
+streams_count = 10
+stream_0/stream = ExtResource("10_a4ewh")
+stream_1/stream = ExtResource("11_ke76y")
+stream_2/stream = ExtResource("12_q36pp")
+stream_3/stream = ExtResource("13_pse8u")
+stream_4/stream = ExtResource("14_8eix5")
+stream_5/stream = ExtResource("15_xlcb8")
+stream_6/stream = ExtResource("16_w6ndb")
+stream_7/stream = ExtResource("17_i13gi")
+stream_8/stream = ExtResource("18_cbjfg")
+stream_9/stream = ExtResource("19_n507e")
+
+[sub_resource type="Animation" id="Animation_3wpvt"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CameraPosition:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0.6, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CameraPosition/Camera3D/HandPosition:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.578, -0.275066, -1.125)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("PlayerAudios/Footstep:max_db")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-20.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BodyMesh:mesh:height")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [2.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BodyMesh/CrouchCast:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 1.8, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CollisionShape3D:shape:height")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [2.0]
+}
+
+[sub_resource type="Animation" id="Animation_3xpkv"]
+resource_name = "walkingAnimation"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CameraPosition:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.12, 0.233333, 0.25, 0.266667, 0.366667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.6, 0), Vector3(0, 0.62, 0), Vector3(0, 0.6, 0), Vector3(0, 0.595, 0), Vector3(0, 0.6, 0), Vector3(0, 0.62, 0), Vector3(0, 0.6, 0)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.25),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"playFootstep"
+}]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CameraPosition/Camera3D/HandPosition:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.233333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0.578, -0.275066, -1.125), Vector3(0.545, -0.239, -1.125)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("PlayerAudios/Footstep:max_db")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-20.0]
+}
+
+[sub_resource type="Animation" id="Animation_iy1o7"]
+resource_name = "idleAnimation"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CameraPosition:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.6, 0), Vector3(0, 0.605, 0), Vector3(0, 0.6, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CameraPosition/Camera3D/HandPosition:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0.578, -0.275066, -1.125), Vector3(0.578, -0.27, -1.125), Vector3(0.578, -0.275066, -1.125)]
+}
+
+[sub_resource type="Animation" id="Animation_2qjwt"]
+resource_name = "runningAnimation"
+
+[sub_resource type="Animation" id="Animation_yd3t3"]
+resource_name = "sprintingAnimation"
+length = 0.35
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CameraPosition:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0875, 0.1633, 0.175, 0.1867, 0.2567, 0.35),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.6, 0), Vector3(0, 0.62, 0), Vector3(0, 0.6, 0), Vector3(0, 0.595, 0), Vector3(0, 0.6, 0), Vector3(0, 0.62, 0), Vector3(0, 0.6, 0)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.175),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"playFootstep"
+}]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CameraPosition/Camera3D/HandPosition:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.175),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0.578, -0.275066, -1.125), Vector3(0.545, -0.239, -1.125)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("PlayerAudios/Footstep:max_db")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-13.0]
+}
+
+[sub_resource type="Animation" id="Animation_4vinn"]
+resource_name = "crouchingAnimation"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BodyMesh:mesh:height")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [2.0, 1.65]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CameraPosition:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0.6, 0), Vector3(0, 0.25, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BodyMesh/CrouchCast:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 2.35, 0), Vector3(0, 2.2, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CollisionShape3D:shape:height")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [2.0, 1.65]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_eivdr"]
+_data = {
+"RESET": SubResource("Animation_3wpvt"),
+"crouchingAnimation": SubResource("Animation_4vinn"),
+"idleAnimation": SubResource("Animation_iy1o7"),
+"runningAnimation": SubResource("Animation_2qjwt"),
+"sprintingAnimation": SubResource("Animation_yd3t3"),
+"walkingAnimation": SubResource("Animation_3xpkv")
+}
+
+[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("Camera", "animationPlayer", "weaponLoadout", "playerUI", "playerFootStepAudio")]
+script = ExtResource("1_pojg5")
+Camera = NodePath("CameraPosition/Camera3D")
+animationPlayer = NodePath("AnimationPlayers/AnimationPlayer")
+weaponLoadout = NodePath("CameraPosition/Camera3D/HandPosition/WeaponLoadout")
+playerUI = NodePath("PlayerUI")
+playerFootStepAudio = NodePath("PlayerAudios/Footstep")
+
+[node name="BodyMesh" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_tqtbf")
+
+[node name="GlassesMesh" type="MeshInstance3D" parent="BodyMesh"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.559701, -0.470768)
+layers = 512
+mesh = SubResource("BoxMesh_sh3sk")
+
+[node name="CrouchCast" type="ShapeCast3D" parent="BodyMesh"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8, 0)
+shape = SubResource("SphereShape3D_x5w0j")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_f3cjc")
+
+[node name="CameraPosition" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0)
+
+[node name="Camera3D" type="Camera3D" parent="CameraPosition"]
+cull_mask = 1048063
+
+[node name="HandPosition" type="Node3D" parent="CameraPosition/Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.578, -0.275066, -1.125)
+
+[node name="WeaponLoadout" type="Node3D" parent="CameraPosition/Camera3D/HandPosition" node_paths=PackedStringArray("flashlight")]
+unique_name_in_owner = true
+script = ExtResource("2_swpuv")
+flashlight = NodePath("Flashlight")
+
+[node name="Flashlight" parent="CameraPosition/Camera3D/HandPosition/WeaponLoadout" instance=ExtResource("2_4mry2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00732124, -0.112087, 0.302187)
+
+[node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("player")]
+script = ExtResource("2_4b4ws")
+player = NodePath("..")
+
+[node name="IdlePlayerState" type="Node" parent="StateMachine"]
+script = ExtResource("3_h4fs5")
+
+[node name="WalkingPlayerState" type="Node" parent="StateMachine"]
+script = ExtResource("4_whhrh")
+
+[node name="RunningPlayerState" type="Node" parent="StateMachine"]
+script = ExtResource("5_q8pdf")
+
+[node name="JumpingPlayerState" type="Node" parent="StateMachine"]
+script = ExtResource("6_fmm5x")
+
+[node name="CrouchingPlayerState" type="Node" parent="StateMachine"]
+script = ExtResource("9_pplru")
+
+[node name="PlayerUI" parent="." instance=ExtResource("9_jq1ws")]
+
+[node name="PlayerAudios" type="Node3D" parent="."]
+
+[node name="Footstep" type="AudioStreamPlayer3D" parent="PlayerAudios"]
+stream = SubResource("AudioStreamRandomizer_njsvy")
+max_db = -20.0
+
+[node name="AnimationPlayers" type="Node" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimationPlayers"]
+unique_name_in_owner = true
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_eivdr")
+}
