@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\PlayerScripts\\CrouchingPlayerState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scripts\\PlayerScripts\\CrouchingPlayerState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\Zombie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scripts\\Zombie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96B0F6BB-C9CF-4A2E-AC15-E619D49C2BD0}|EdgeMalone.csproj|c:\\users\\arman\\documents\\godotprojects\\edgemalone\\scripts\\playerscripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96B0F6BB-C9CF-4A2E-AC15-E619D49C2BD0}|EdgeMalone.csproj|solutionrelative:scripts\\playerscripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{96B0F6BB-C9CF-4A2E-AC15-E619D49C2BD0}|EdgeMalone.csproj|c:\\users\\arman\\documents\\godotprojects\\edgemalone\\scripts\\playerscripts\\walkingplayerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96B0F6BB-C9CF-4A2E-AC15-E619D49C2BD0}|EdgeMalone.csproj|solutionrelative:scripts\\playerscripts\\walkingplayerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96B0F6BB-C9CF-4A2E-AC15-E619D49C2BD0}|EdgeMalone.csproj|c:\\users\\arman\\documents\\godotprojects\\edgemalone\\scripts\\playerscripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96B0F6BB-C9CF-4A2E-AC15-E619D49C2BD0}|EdgeMalone.csproj|solutionrelative:scripts\\playerscripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{96B0F6BB-C9CF-4A2E-AC15-E619D49C2BD0}|EdgeMalone.csproj|c:\\users\\arman\\documents\\godotprojects\\edgemalone\\scripts\\playerscripts\\jumpingplayerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96B0F6BB-C9CF-4A2E-AC15-E619D49C2BD0}|EdgeMalone.csproj|solutionrelative:scripts\\playerscripts\\jumpingplayerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96B0F6BB-C9CF-4A2E-AC15-E619D49C2BD0}|EdgeMalone.csproj|c:\\users\\arman\\documents\\godotprojects\\edgemalone\\scripts\\playerscripts\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96B0F6BB-C9CF-4A2E-AC15-E619D49C2BD0}|EdgeMalone.csproj|solutionrelative:scripts\\playerscripts\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96B0F6BB-C9CF-4A2E-AC15-E619D49C2BD0}|EdgeMalone.csproj|c:\\users\\arman\\documents\\godotprojects\\edgemalone\\scripts\\flashlight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96B0F6BB-C9CF-4A2E-AC15-E619D49C2BD0}|EdgeMalone.csproj|solutionrelative:scripts\\flashlight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\PlayerScripts\\PlayerAudios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scripts\\PlayerScripts\\PlayerAudios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96B0F6BB-C9CF-4A2E-AC15-E619D49C2BD0}|EdgeMalone.csproj|c:\\users\\arman\\documents\\godotprojects\\edgemalone\\scripts\\playerscripts\\crouchingplayerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96B0F6BB-C9CF-4A2E-AC15-E619D49C2BD0}|EdgeMalone.csproj|solutionrelative:scripts\\playerscripts\\crouchingplayerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{96B0F6BB-C9CF-4A2E-AC15-E619D49C2BD0}|EdgeMalone.csproj|c:\\users\\arman\\documents\\godotprojects\\edgemalone\\scripts\\playerscripts\\playerstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,28 +43,16 @@
       "RelativeMoniker": "D:0:0:{96B0F6BB-C9CF-4A2E-AC15-E619D49C2BD0}|EdgeMalone.csproj|solutionrelative:scripts\\playerscripts\\idleplayerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96B0F6BB-C9CF-4A2E-AC15-E619D49C2BD0}|EdgeMalone.csproj|c:\\users\\arman\\documents\\godotprojects\\edgemalone\\scripts\\flashlight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96B0F6BB-C9CF-4A2E-AC15-E619D49C2BD0}|EdgeMalone.csproj|solutionrelative:scripts\\flashlight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96B0F6BB-C9CF-4A2E-AC15-E619D49C2BD0}|EdgeMalone.csproj|c:\\users\\arman\\documents\\godotprojects\\edgemalone\\scripts\\playerscripts\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96B0F6BB-C9CF-4A2E-AC15-E619D49C2BD0}|EdgeMalone.csproj|solutionrelative:scripts\\playerscripts\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96B0F6BB-C9CF-4A2E-AC15-E619D49C2BD0}|EdgeMalone.csproj|c:\\users\\arman\\documents\\godotprojects\\edgemalone\\scripts\\playerscripts\\jumpingplayerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96B0F6BB-C9CF-4A2E-AC15-E619D49C2BD0}|EdgeMalone.csproj|solutionrelative:scripts\\playerscripts\\jumpingplayerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{96B0F6BB-C9CF-4A2E-AC15-E619D49C2BD0}|EdgeMalone.csproj|c:\\users\\arman\\documents\\godotprojects\\edgemalone\\scripts\\playerscripts\\runningplayerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96B0F6BB-C9CF-4A2E-AC15-E619D49C2BD0}|EdgeMalone.csproj|solutionrelative:scripts\\playerscripts\\runningplayerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\PlayerScripts\\PlayerUi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scripts\\PlayerScripts\\PlayerUi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{96B0F6BB-C9CF-4A2E-AC15-E619D49C2BD0}|EdgeMalone.csproj|c:\\users\\arman\\documents\\godotprojects\\edgemalone\\scripts\\playerscripts\\weaponloadout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96B0F6BB-C9CF-4A2E-AC15-E619D49C2BD0}|EdgeMalone.csproj|solutionrelative:scripts\\playerscripts\\weaponloadout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96B0F6BB-C9CF-4A2E-AC15-E619D49C2BD0}|EdgeMalone.csproj|c:\\users\\arman\\documents\\godotprojects\\edgemalone\\scripts\\playerscripts\\playerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96B0F6BB-C9CF-4A2E-AC15-E619D49C2BD0}|EdgeMalone.csproj|solutionrelative:scripts\\playerscripts\\playerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -53,18 +61,44 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 249,
+          "DockedWidth": 274,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Zombie.cs",
+              "DocumentMoniker": "C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\Zombie.cs",
+              "RelativeDocumentMoniker": "scripts\\Zombie.cs",
+              "ToolTip": "C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\Zombie.cs",
+              "RelativeToolTip": "scripts\\Zombie.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T20:45:38.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PlayerAudios.cs",
+              "DocumentMoniker": "C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\PlayerScripts\\PlayerAudios.cs",
+              "RelativeDocumentMoniker": "scripts\\PlayerScripts\\PlayerAudios.cs",
+              "ToolTip": "C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\PlayerScripts\\PlayerAudios.cs",
+              "RelativeToolTip": "scripts\\PlayerScripts\\PlayerAudios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T20:30:32.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "CrouchingPlayerState.cs",
               "DocumentMoniker": "C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\PlayerScripts\\CrouchingPlayerState.cs",
               "RelativeDocumentMoniker": "scripts\\PlayerScripts\\CrouchingPlayerState.cs",
               "ToolTip": "C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\PlayerScripts\\CrouchingPlayerState.cs",
               "RelativeToolTip": "scripts\\PlayerScripts\\CrouchingPlayerState.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAowDoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAA5wDoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-03T20:40:56.592Z",
               "EditorCaption": ""
@@ -72,51 +106,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "PlayerStateMachine.cs",
-              "DocumentMoniker": "C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\PlayerScripts\\PlayerStateMachine.cs",
-              "RelativeDocumentMoniker": "scripts\\PlayerScripts\\PlayerStateMachine.cs",
-              "ToolTip": "C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\PlayerScripts\\PlayerStateMachine.cs",
-              "RelativeToolTip": "scripts\\PlayerScripts\\PlayerStateMachine.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAAB0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T19:05:26.78Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "WalkingPlayerState.cs",
-              "DocumentMoniker": "C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\PlayerScripts\\WalkingPlayerState.cs",
-              "RelativeDocumentMoniker": "scripts\\PlayerScripts\\WalkingPlayerState.cs",
-              "ToolTip": "C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\PlayerScripts\\WalkingPlayerState.cs",
-              "RelativeToolTip": "scripts\\PlayerScripts\\WalkingPlayerState.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowCsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T19:22:37.144Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IdlePlayerState.cs",
-              "DocumentMoniker": "C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\PlayerScripts\\IdlePlayerState.cs",
-              "RelativeDocumentMoniker": "scripts\\PlayerScripts\\IdlePlayerState.cs",
-              "ToolTip": "C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\PlayerScripts\\IdlePlayerState.cs",
-              "RelativeToolTip": "scripts\\PlayerScripts\\IdlePlayerState.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T16:55:25.59Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "JumpingPlayerState.cs",
               "DocumentMoniker": "C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\PlayerScripts\\JumpingPlayerState.cs",
               "RelativeDocumentMoniker": "scripts\\PlayerScripts\\JumpingPlayerState.cs",
               "ToolTip": "C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\PlayerScripts\\JumpingPlayerState.cs",
               "RelativeToolTip": "scripts\\PlayerScripts\\JumpingPlayerState.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAmwCQAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-01T16:56:32.268Z",
               "EditorCaption": ""
@@ -124,6 +119,30 @@
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "PlayerStateMachine.cs",
+              "DocumentMoniker": "C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\PlayerScripts\\PlayerStateMachine.cs",
+              "RelativeDocumentMoniker": "scripts\\PlayerScripts\\PlayerStateMachine.cs",
+              "ToolTip": "C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\PlayerScripts\\PlayerStateMachine.cs",
+              "RelativeToolTip": "scripts\\PlayerScripts\\PlayerStateMachine.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAB0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T19:05:26.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IdlePlayerState.cs",
+              "DocumentMoniker": "C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\PlayerScripts\\IdlePlayerState.cs",
+              "RelativeDocumentMoniker": "scripts\\PlayerScripts\\IdlePlayerState.cs",
+              "ToolTip": "C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\PlayerScripts\\IdlePlayerState.cs",
+              "RelativeToolTip": "scripts\\PlayerScripts\\IdlePlayerState.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T16:55:25.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "RunningPlayerState.cs",
               "DocumentMoniker": "C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\PlayerScripts\\RunningPlayerState.cs",
               "RelativeDocumentMoniker": "scripts\\PlayerScripts\\RunningPlayerState.cs",
@@ -131,12 +150,11 @@
               "RelativeToolTip": "scripts\\PlayerScripts\\RunningPlayerState.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwBUAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T16:55:54.256Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T16:55:54.256Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "PlayerUi.cs",
               "DocumentMoniker": "C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\PlayerScripts\\PlayerUi.cs",
               "RelativeDocumentMoniker": "scripts\\PlayerScripts\\PlayerUi.cs",
@@ -144,12 +162,11 @@
               "RelativeToolTip": "scripts\\PlayerScripts\\PlayerUi.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T19:36:26.736Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-03T19:36:26.736Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "WeaponLoadout.cs",
               "DocumentMoniker": "C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\PlayerScripts\\WeaponLoadout.cs",
               "RelativeDocumentMoniker": "scripts\\PlayerScripts\\WeaponLoadout.cs",
@@ -157,15 +174,28 @@
               "RelativeToolTip": "scripts\\PlayerScripts\\WeaponLoadout.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T19:09:23.739Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-03T19:09:23.739Z"
             }
           ]
         },
         {
-          "DockedWidth": 269,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 244,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\PlayerScripts\\Player.cs",
+              "RelativeDocumentMoniker": "scripts\\PlayerScripts\\Player.cs",
+              "ToolTip": "C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\PlayerScripts\\Player.cs",
+              "RelativeToolTip": "scripts\\PlayerScripts\\Player.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAIwCMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T19:15:00.22Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 5,
@@ -181,20 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\PlayerScripts\\Player.cs",
-              "RelativeDocumentMoniker": "scripts\\PlayerScripts\\Player.cs",
-              "ToolTip": "C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\PlayerScripts\\Player.cs",
-              "RelativeToolTip": "scripts\\PlayerScripts\\Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T19:15:00.22Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "PlayerState.cs",
               "DocumentMoniker": "C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\PlayerScripts\\PlayerState.cs",
               "RelativeDocumentMoniker": "scripts\\PlayerScripts\\PlayerState.cs",
@@ -203,6 +220,19 @@
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwCoAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-01T16:56:52.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WalkingPlayerState.cs",
+              "DocumentMoniker": "C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\PlayerScripts\\WalkingPlayerState.cs",
+              "RelativeDocumentMoniker": "scripts\\PlayerScripts\\WalkingPlayerState.cs",
+              "ToolTip": "C:\\Users\\arman\\Documents\\GodotProjects\\edgemalone\\scripts\\PlayerScripts\\WalkingPlayerState.cs",
+              "RelativeToolTip": "scripts\\PlayerScripts\\WalkingPlayerState.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwB8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T19:22:37.144Z",
               "EditorCaption": ""
             }
           ]

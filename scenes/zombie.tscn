@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://c41ycutjhmose"]
+
+[ext_resource type="Script" path="res://scripts/Zombie.cs" id="1_xwqej"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_stlqr"]
+albedo_color = Color(0, 0.627451, 0, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_2a0ly"]
+material = SubResource("StandardMaterial3D_stlqr")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_e2lcn"]
+
+[node name="Zombie" type="CharacterBody3D"]
+script = ExtResource("1_xwqej")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_2a0ly")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_e2lcn")
+
+[node name="ZombieAudios" type="Node3D" parent="."]
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+avoidance_enabled = true
+debug_enabled = true

@@ -20,6 +20,8 @@ public partial class JumpingPlayerState : PlayerState
         _input_multiplier = input_multiplier;
 
         player.Velocity += new Vector3(0.0f, jump_velocity, 0.0f);
+
+        player.animationPlayer.Play("jumpingAnimation");
     }
 
     public override void Exit()

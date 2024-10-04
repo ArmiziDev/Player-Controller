@@ -8,7 +8,6 @@ public partial class Player : CharacterBody3D
     [Export] public AnimationPlayer animationPlayer { get; set; }
     [Export] public WeaponLoadout weaponLoadout { get; set; }
     [Export] public PlayerUi playerUI { get; set; }
-    [Export] private AudioStreamPlayer3D playerFootStepAudio { get; set; }
 
     private Vector3 rotationDegreesLocal; // Store the local rotation to prevent gimbal lock
 
@@ -80,10 +79,5 @@ public partial class Player : CharacterBody3D
             // Apply the rotation to the player body (y-axis only)
             RotationDegrees = new Vector3(0, rotationDegreesLocal.Y, 0);
         }
-    }
-
-    public void playFootstep()
-    {
-        playerFootStepAudio.Play();
     }
 }
